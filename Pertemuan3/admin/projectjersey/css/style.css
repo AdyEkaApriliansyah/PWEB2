@@ -1,0 +1,393 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  z-index: 9999;
+  width: 100vw;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  text-decoration: none;
+}
+
+.navbar-logo span {
+  color: #ff6b6b; /* Accent color */
+}
+
+.navbar-nav {
+  display: flex;
+}
+
+.navbar-nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.navbar-extra a {
+  margin-left: 20px;
+  color: #333;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.search-form {
+  display: none; /* Initially hidden */
+}
+
+#search-button:hover + .search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-form input[type="search"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+/* Hero Section Styles */
+.hero{
+  color: black;
+  text-align: center;
+  padding: 4rem 0;
+  position: relative;
+}
+.slideshow-container{
+  width: 100%;
+  height: 150%;
+}
+header::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 5);
+}
+.hero h1{
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+/* Button Styles */
+.btn {
+  background-color: #ff6b6b; /* Accent color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.btn:hover {
+  background-color: #ff4c4c; /* Darker shade on hover */
+}
+
+/* Featured Products Styles */
+.featured-products {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.featured-products h2 {
+  margin-bottom: 30px;
+  font-size: 36px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 3rem;
+}
+
+.product-card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 15px;
+  transition: transform 0.3s, box-shadow 0.3s; /* Added box-shadow transition */
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+.product-card h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.product-card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff6b6b; 
+}
+
+.about {
+  padding: 50px 20px;
+  background-color: white;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333; 
+  text-align: center;
+}
+
+.about p {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #666;
+  line-height: 1.6; 
+  text-align: justify;
+}
+
+.about .btn {
+  margin-top: 20px;
+}
+
+/* Form Styles */
+.form {
+  padding: 8rem 7% 1.4rem;
+}
+
+.form .row {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.form .row .map {
+  flex: 1 1 45rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.form .row form {
+  flex: 1 1 45rem;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.form h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333; 
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-top: -2rem;
+  padding-left: 2rem;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #666;
+  margin: 1rem;
+}
+
+.form-group input, 
+.form-group textarea {
+  width: 100%;
+  padding: 1.7rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+  border-color: #ff6b6b;
+  outline: none; /* Menghilangkan outline default */
+}
+
+.form-group textarea {
+  resize: vertical; /* Memungkinkan resize vertikal saja */
+}
+
+.form button[type="submit"] {
+  background-color: #ff6b6b; /* Warna latar belakang tombol */
+  color: white; /* Warna teks tombol */
+  padding: 12px 20px; /* Padding untuk tombol */
+  border: none; /* Menghilangkan border */
+  border-radius: 5px; /* Sudut yang halus */
+  cursor: pointer; /* Mengubah kursor saat hover */
+  font-size: 18px; /* Ukuran font untuk tombol */
+  transition: background-color 0.3s; /* Transisi halus untuk warna latar belakang */
+}
+
+.form button[type="submit"]:hover {
+  background-color: #ff4c4c; 
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .form {
+      padding: 30px 15px;
+  }
+
+  .form h2 {
+      font-size: 24px;
+  }
+
+  .form-group input, 
+  .form-group textarea {
+      font-size: 14px;
+  }
+
+  .form button[type="submit"] {
+      font-size: 16px;
+  }
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #f3f3f3;
+}
+
+.main {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 400px;
+  text-align: center;
+}
+
+h1 {
+  color: black;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #ff6b6b;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: black;
+}
+
+.profilpengembang {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #f3f3f3;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 100vw;
+  text-align: center;
+}
+
+.profil-card {
+  margin: 20px 0;
+}
+
+.profil-foto {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+h1 {
+  color: #4CAF50;
+}
+
+h2 {
+  margin: 10px 0;
+}
+
+.social-media a {
+  display: inline-block;
+  margin: 5px;
+  text-decoration: none;
+  color: #4CAF50;
+}
+
+.social-media a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ff6b6b;
+}

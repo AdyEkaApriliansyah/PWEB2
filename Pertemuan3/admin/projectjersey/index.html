@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dyka Store</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- Navbar Start -->
+<nav class="navbar">
+    <a href="#" class="navbar-logo">Dyka<span>store</span>.</a>
+
+    <div class="navbar-nav"> 
+        <a href="#">Home</a>
+        <a href="#tentangkami">Tentang Kami</a>
+        <a href="#produk">Produk</a>
+        <a href="#login">Login</a>
+        <a href="#profilpengembang">Profil Pengembang</a>
+        <a href="#form">Pesanan</a>
+    </div>
+
+    <div class="navbar-extra">
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+    </div>
+
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box"><i data-feather="search"></i></label>
+    </div>
+</nav>
+<!-- Navbar end -->
+
+<!-- Hero Section Start -->
+<section class="hero">
+    <div class="slideshow-container">
+        <h1>Dyka Store</h1>
+        <div class="mySlides fade">
+            <img src="img/background_jersey-transformed.jpeg" alt="Gambar 1" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="img/background_jersey1.jpg" alt="Gambar 2" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="img/background_jersey-transformed.jpeg" alt="Gambar 3" style="width:100%">
+        </div>  
+    </div>
+
+    <script>
+        let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    slides[slideIndex-1].style.display = "block";  
+    setTimeout(showSlides, 3000); 
+}
+</script>
+</section>
+<!-- Hero Section End -->
+
+<!--Tentang kami-->
+<section class="about" id="tentangkami">
+    <section class="about" id="tentangkami">
+        <h2>Tentang Kami</h2>
+        <p>Dyka Store adalah toko online yang menyediakan berbagai macam produk fashion berkualitas tinggi, termasuk jersey olahraga dan apparel stylish. Kami berkomitmen untuk memberikan pengalaman berbelanja yang terbaik bagi pelanggan kami.</p>
+        <p>Kami percaya bahwa setiap orang berhak untuk tampil percaya diri dan stylish, baik di lapangan maupun dalam kehidupan sehari-hari. Dengan desain modern dan pilihan warna yang beragam, produk kami siap menemani setiap langkah Anda.</p>
+        <button class="btn">Pelajari Lebih Lanjut</button>
+    </section>
+</section>
+
+<!-- Featured Products Section Start -->
+<section class="featured-products" id="produk">
+    <h2>Produk Kami</h2>
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="img/jersey_triple.jpg" alt="Product 1">
+            <h3>Triple Apparel</h3>
+            <p> Desain Modern & Stylish: Tersedia dalam berbagai pilihan warna dan motif yang keren, cocok untuk tampil percaya diri di lapangan atau di luar.</p>
+            <span class="price">Rp.599.000</span>
+            <a href="#form"><button class="btn">Pesanan Sekarang</button></a>
+        </div>
+        <div class="product-card">
+          <img src="img/jersey_triple2.jpg" alt="Product 2">
+          <h3>Triple Apparel</h3>
+          <p> Desain Modern & Stylish: Tersedia dalam berbagai pilihan warna dan motif yang keren, cocok untuk tampil percaya diri di lapangan atau di luar.</p>
+          <span class="price">Rp.559.000</span>
+          <a href="#form"><button class="btn">Pesanan Sekarang</button></a>
+       </div>
+        <div class="product-card">
+            <img src="img/jersey_triple4.jpg" alt="Product 2">
+            <h3>Triple Apparel</h3>
+            <p> Desain Modern & Stylish: Tersedia dalam berbagai pilihan warna dan motif yang keren, cocok untuk tampil percaya diri di lapangan atau di luar.</p>
+            <span class="price">Rp.559.000</span>
+            <a href="#form"><button class="btn">Pesanan Sekarang</button></a>
+         </div>
+         <div class="product-card">
+          <img src="img/jersey_triple2.jpg" alt="Product 2">
+          <h3>Triple Apparel</h3>
+          <p> Desain Modern & Stylish: Tersedia dalam berbagai pilihan warna dan motif yang keren, cocok untuk tampil percaya diri di lapangan atau di luar.</p>
+          <span class="price">Rp.559.000</span>
+          <a href="#form"><button class="btn">Pesanan Sekarang</button></a>
+       </div>
+         <div class="product-card">
+              <img src="img/jersey_triple5.jpg" alt="Product 3">
+              <h3>Triple Apparel</h3>
+              <p> Desain Modern & Stylish: Tersedia dalam berbagai pilihan warna dan motif yang keren, cocok untuk tampil percaya diri di lapangan atau di luar.</p>
+              <span class="price">Rp.599.000</span>
+              <a href="#form"><button class="btn">Pesanan Sekarang</button></a>
+          </div>
+</section>
+
+<!-- Featured Products Section End -->
+
+<!--formulir-->
+<section class="form" id="form">
+    <h2>Formulir Kontak</h2>
+    <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.486704194882!2d106.73986997475272!3d-6.459851993531698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e9c94b62fbb5%3A0x333dad29aba00193!2sParung%20Permata%20Indah!5e0!3m2!1sid!2sid!4v1732930180420!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <form action="#" method="post">
+         <div class="form-group">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+         </div>
+         <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+         </div>
+         <div class="form-group">
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+         </div>
+         <button type="submit" class="btn">Kirim</button>
+         </form>
+    </div>
+</section>
+
+<!--login-->
+<section class="login" id="login">
+    <div class="main">
+        <h1>Masuk</h1>
+
+        <form action="">
+            <label for="username">Nama Pengguna:</label>
+            <input type="text" id="username" name="username" placeholder="Masukkan Nama Pengguna" required>
+
+            <label for="password">Kata Sandi:</label>
+            <input type="password" id="password" name="password" placeholder="Masukkan Kata Sandi" required>
+
+            <div class="wrap">
+                <button type="submit">Kirim</button>
+            </div>
+        </form>
+
+        <p>Belum terdaftar? <a href="#" style="text-decoration: none;">Buat akun</a></p>
+    </div>
+
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Mencegah pengiriman form secara default
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    console.log('Nama Pengguna:', username);
+    console.log('Kata Sandi:', password);
+});
+    </script>
+</section>
+
+<!--profil pengembang-->
+<section class="profilpengembang" id="profilpengembang">
+    <div class="container">
+        <h1>Profil Pengembang</h1>
+        <div class="profil-card">
+            <img src="img/fotoku.jpg" alt="Foto Profil" class="profil-foto">
+            <h2>Ady Eka Apriliansyah</h2>
+            <p><strong>Email:</strong>apriliansyahady@gmail.com</p>
+            <p><strong>Deskripsi:</strong></p>
+            <p>Halo! Saya adalah seseorang yang berkomitmen untuk menyediakan jersey berkualitas bagi para pecinta olahraga. Berawal dari passion saya di dunia olahraga, saya menghadirkan koleksi lengkap jersey tim favorit Anda, termasuk layanan custom nama dan nomor.
+                Saya percaya bahwa setiap jersey adalah simbol semangat dan kebanggaan. Yuk, tampil keren dan dukung tim kesayangan Anda bersama saya! 😊</p>
+            <div class="social-media">
+                <a href="https://github.com/" target="https://github.com/"><i data-feather="github"></i></a>
+                <a href="https://linkedin.com/in/" target="https://www.linkedin.com/feed/"><i data-feather="linkedin"></i></a>
+                <a href="https://www.instagram.com/aprliansyaa/profilecard/?igsh=MTZpZXJ0ZzB1MXRwMw=="><i data-feather="instagram"></i></a>
+                <a href="https://wa.me/6289638274066" target=""><i data-feather="phone"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer Start -->
+<footer>
+    <p>&copy; 2024 Dyka Store. All rights reserved.</p>
+</footer>
+<!-- Footer End -->
+
+<!-- Feather Icons -->
+<script>
+    feather.replace();
+</script>
+
+</body>
+</html>
